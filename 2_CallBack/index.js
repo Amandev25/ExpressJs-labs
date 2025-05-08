@@ -16,5 +16,37 @@ const app = express();
 //  )
 
 
+// ******************** ARRAY OF CALLBACKS ********************
+console.clear();
+// const cb1 = (req, res,next) => {
+//     console.log("first CallBack");
+//     next();
+// }
+// const cb2 = (req, res ,next) => {
+//     console.log("Second CallBack");
+//     next();
+// }
+// const cb3 = (req, res) => {
+//     console.log("Third CallBack");
+//     res.send("Array of callback functions");
+// }
+
+// app.get("/array-cb" , [cb1,cb2,cb3])
+const cb1 = (req, res,next) => {
+       console.log("first CallBack");
+         next();}
+const cb2 = (req, res,next) => {
+       console.log("Second CallBack");
+         next();}
+app.get("/crazyness" ,[cb1,cb2] , (req,res,next)=> {
+   console.log("third callback");
+   next();
+},
+  (req, res,next) => {
+    console.log("Fourth CallBack");
+      res.send("ARRAY OF CALLBACKS");
+})         
+
+
 app.listen(5000,()=> console.log("Server is running on port 5000")
 );
