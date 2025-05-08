@@ -9,11 +9,11 @@
 
 ## 📚 Learning Checklist
 
-- [ ] What is Express.js  
-- [ ] Before Express.js  
-- [ ] First Express App  
-- [ ] Basic Routing  
-- [ ] Advance Routing  
+- [✅] What is Express.js  
+- [✅] Before Express.js  
+- [✅] First Express App  
+- [✅] Basic Routing  
+- [✅] Advance Routing  
 - [ ] Request and Response Advance Topics  
 - [ ] Postman and `app.route()`  
 - [ ] Advance Router  
