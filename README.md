@@ -14,9 +14,9 @@
 - [✅] First Express App  
 - [✅] Basic Routing  
 - [✅] Advance Routing  
-- [ ] Request and Response Advance Topics  
-- [ ] Postman and `app.route()`  
-- [ ] Advance Router  
+- [✅] Request and Response Advance Topics  
+- [✅] Postman and `app.route()`  
+- [✅] Advance Router  
 - [ ] Route Parameters In Depth  
 - [ ] Controllers In Depth  
 - [ ] Query String In Depth  
