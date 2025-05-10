@@ -3,8 +3,9 @@ const app = express();
 
 // Query String ? &
  app.get ('/product' , (req, res)=>{
-    res.send(`response OK ${req.query.category}`)
- })
+    const {category , price} = req.query;
+   res.send(`product Category is ${category} and Price is ${price}`); 
+ } );
 
 
 app.listen(8000, ()=>console.log("Server up!!"));
