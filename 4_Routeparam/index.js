@@ -2,9 +2,11 @@ import express from 'express';
 const app = express();
 // Route parameters
 // Ecom/products/iphone/:iphoneId
-app.get('/ecom/products/iphone/:model' , (req,res)=>{
+app.get('/product/order/:day/:month/:year' , (req,res)=>{
    // res.send("User deleted");
-    res.send(req.params.model);
+   // res.send(req.params.model);
+   const {day,month,year} =req.params;
+   res.send(`This product was ordered on ${day}/${month}/${year}`);
 })
 
 
