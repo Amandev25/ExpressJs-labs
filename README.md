@@ -17,9 +17,9 @@
 - [✅] Request and Response Advance Topics  
 - [✅] Postman and `app.route()`  
 - [✅] Advance Router  
-- [ ] Route Parameters In Depth  
-- [ ] Controllers In Depth  
-- [ ] Query String In Depth  
+- [✅] Route Parameters In Depth  
+- [✅] Controllers In Depth  
+- [✅] Query String In Depth  
 - [ ] Sending JSON  
 - [ ] Express Middleware In Depth  
 - [ ] Serving Static Files in Express  
