@@ -2,7 +2,8 @@ import express from "express";
 const app = express();
 import product from "./products.js";
 
-app.get("/getProdects" ,(req,res)=>{
+app.get("/products", (req,res)=>
+{
     res.json(product);
 });
 
