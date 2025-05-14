@@ -2,6 +2,7 @@
   "name": "10_tempengine",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
     "start": "nodemon index.js"

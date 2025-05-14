@@ -1,5 +1,5 @@
 const aboutController  = (req,res) => {
-res.render("index");
+res.render("about");
 }
 
-export default aboutController; 
+export { aboutController}; 
