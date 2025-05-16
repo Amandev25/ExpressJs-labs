@@ -6,6 +6,18 @@
     <title>HOME</title>
 </head>
 <body>
-    <h1>This is a Home Page 🏡🏡🏡</h1>
+    <!--Display Variable -->
+    <%= name.toUpperCase() %>
+
+    <!-- Conditional Statement  -->
+     <% if(userId === 20) { %>
+        <h1>Welcome User</h1>}
+        <% } %>
+
+        <!-- Loops In ejs -->
+         <% for( let i=0 ;i <5 ;i++) { %>
+          <h1><%= i %></h1>  
+        
+        <% } %>
 </body>
 </html>
