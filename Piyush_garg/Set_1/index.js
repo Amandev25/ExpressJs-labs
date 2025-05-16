@@ -5,7 +5,7 @@ app.get('/' , (req,res) =>{
     return res.send('hello world');
 })
 app.get('/about' , (req,res) =>{
-    return res.send('this is About Page');
+    return res.send('this is About Page' + " hey" + req.query.name);
 })
 
 app.listen(8000 ,() =>console.log('Server is Running on 8000'));
