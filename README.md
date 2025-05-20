@@ -20,8 +20,8 @@
 - [✅] Route Parameters In Depth  
 - [✅] Controllers In Depth  
 - [✅] Query String In Depth  
-- [ ] Sending JSON  
-- [ ] Express Middleware In Depth  
-- [ ] Serving Static Files in Express  
-- [ ] Template Engine Setup  
-- [ ] EJS Crash Course
+- [✅] Sending JSON  
+- [✅] Express Middleware In Depth  
+- [✅] Serving Static Files in Express  
+- [✅] Template Engine Setup  
+- [✅] EJS Crash Course
