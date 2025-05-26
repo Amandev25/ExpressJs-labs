@@ -27,6 +27,8 @@ const userSchema = new mongoose.Schema({
         type :String,
     }
 })
+// Creating a Model
+const User = mongoose.model("User" , userSchema);
 
 // Middleware
 app.use(express.urlencoded({ extended : false}));
