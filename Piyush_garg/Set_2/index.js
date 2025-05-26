@@ -4,6 +4,30 @@ const app = express();
 const port = 8000;
 import users from "./MOCK_DATA.json" assert { type: "json" };
 
+/// Schema 
+const userSchema = new mongoose.Schema({
+    firstName : {
+        type :String,
+        required :true, // this field is Mandatory
+    },
+    lastName : {
+        type :String,
+        required :false // this field is not Mandatory and can be left empty
+    },
+    email : {
+        type : String,
+        required : true,
+        unique : true
+    },
+    jobtitle : {
+        trpe :String,
+
+    },
+    gender : {
+        type :String,
+    }
+})
+
 // Middleware
 app.use(express.urlencoded({ extended : false}));
 //Routes
