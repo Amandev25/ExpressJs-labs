@@ -1,4 +1,5 @@
 import express from "express";
+import mongoose from "mongoose";
 import fs from "fs";
 const app = express();
 const port = 8000;
@@ -27,6 +28,12 @@ const userSchema = new mongoose.Schema({
         type :String,
     }
 })
+// Connecting to MOngoDB
+
+mongoose
+.connect("mongodb://127.0.0.1:27017/youtube_app_1")
+.then(() => {console.log("Connected to MongoDB")})
+.catch((error) => {console.log("Error Connecting to MongoDB", error)})
 // Creating a Model
 const User = mongoose.model("User" , userSchema);
 
@@ -45,16 +52,24 @@ app.get("/api/users/:id", (req,res) => {
     }
     return res.json(user);
 });
-app.post("/api/users" , (req,res)=> {
+app.post("/api/users" , async(req,res)=> {
    const body = req.body;
-   if(!body.first_name || !body.last_name || !body.email || !!body.gender || !body.Job- Title || !body.id){
+   if(!body.first_name || !body.last_name || !body.email || !body.gender || !body.job_title ){
     return res.status(400).json({error : "Please provide all required details"})}
    users.push({...body , id: users.length + 1});
    fs.writeFile("./MOCK_DATA.json", JSON.stringify(users),(err ,data) => {
    return res.json({status: "pending"});
    })
    
-   
+   await User.create({
+    firstName: body.first_name,
+    lastName: body.last_name,
+    email: body.email,
+    gender : body.gender,
+    jobtitle: body.job_title,
+   })
+    console.log("result");
+   return res.status(201).json({ msg: "User Created "})
    
 });
 
