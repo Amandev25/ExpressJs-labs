@@ -2,7 +2,7 @@
   "name": "set_2",
   "version": "1.0.0",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
     "start": "nodemon index.js"
@@ -12,6 +12,7 @@
   "description": "",
   "dependencies": {
     "express": "^5.1.0",
+    "mongoose": "^8.15.1",
     "nodemon": "^3.1.10"
   }
 }

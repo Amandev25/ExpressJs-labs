@@ -1,4 +1,5 @@
 import express from "express";
+import mongoose from"mongoose";
 const app = express();
 const port = 8000;
 import users from "./MOCK_DATA.json" assert { type: "json" };
